@@ -4,15 +4,27 @@
     <style>
         .divider_0{background:#afeeee;}
         .divider_1{background:skyblue;}
+        .right-block{background: lightsalmon}
+        .left-block{background: moccasin}
 
         
 
-        .container {
+        .page-container {
             width: 100%;
             background: LightGray;
             display: grid;
-            grid-template-columns: 38% 62%;
+            grid-template-columns: 45% 55%;
         }
+
+        .item-year-container {
+            width: 100%;
+            background: lightgreen;
+            display: grid;
+            grid-template-columns: 70% 30%;
+
+        }
+
+
 
         h2 {color: blue;}
 
@@ -30,7 +42,7 @@
 
    
 
-    <div class="container"> <!--To divide the site in two colums-->
+    <div class="page-container"> <!--To divide the site in two colums-->
     
         <!------------------------------------Right Column of CV-->
         <div class="divider_0">  
@@ -70,25 +82,25 @@
             <div id="achievement">
                 <h2>Achievements</h2>
                 <hr>
-                <div class="content-block">
-                        <div class="content-left">
+                <div class="item-year-container">
+                        <div class="left-block">
                             <!--Icon-->Microlight's Pilot License
                         </div>
-                        <div class="content-right">
+                        <div class="right-block">
                             <p><small>2011-Present</small></p>
                         </div>
 
-                        <div class="content-left">
+                        <div class="left-block">
                             <!--Icon-->Private Helicopter's Pilot License
                         </div>
-                        <div class="content-right">
+                        <div class="right-block">
                             <p><small>2008-2012</small></p>
                         </div>
 
-                        <div class="content-left">
+                        <div class="left-block">
                                 <!--Icon-->Motor Vehicle licenses<br>A/B/C1/C/EB/EC
                         </div>
-                        <div class="content-right">
+                        <div class="right-block">
                             <p><small>2007-Present</small></p>
                         </div>
 
