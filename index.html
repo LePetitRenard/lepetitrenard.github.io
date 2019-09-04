@@ -2,38 +2,40 @@
 <!DOCTYPE html>
 <html>
     <style>
-        .divider_0{
-            background:#ffffff;
-            margin-block-end: 15%;
-        }
-        .divider_1{
-            background:white;
-            margin-block-end: 15%;
-        }
-
-        .right-block{background: white}
-        .left-block{background: white}
-
-        
-
         .page-container {
             width: 100%;
             display: grid;
             grid-template-columns: 45% 55%;
+        }       
+        .page-left-block{
+            background:#ffffff;
+            margin-block-end: 20px;
+        }
+        .page-right-block{
+            background:white;
+            margin-block-end: 20px;
         }
 
         .item-year-container {
             width: 100%;
             display: grid;
             grid-template-columns: 70% 30%;
-
         }
-        
         .skills-container {
             width: 100%;
             display: grid;
             grid-template-columns: 35% 65%;
         }
+        .right-block{background: white}
+        .left-block{background: white}
+        
+        .name-container{
+            width: 92%;
+            display: grid;
+            grid-template-columns: 20% 80% 20%;
+        }
+        .name-sides-block{background: green}
+        .name-middle-block{background: white}
 
         h1{ font-family: "Verdana"; 
             font-size: 47px; 
@@ -87,11 +89,17 @@
     <div class="page-container"> <!--To divide the site in two colums-->
     
         <!------------------------------------Right Column of CV-->
-        <div class="divider_0">  
+        <div class=".page-left-block">  
             <center>
                 <img class="smaller-image" src="/img/GMG_clear.png" alt="Greg's photo" >
-                <h1><small style="font-size: 40; color: darkgray;">Gregory</small>
-                    <br>Farquhar</h1>
+                <div class=".name-container">
+                    <div class=".name-sides-block"></div>
+                    <div class=".name-middle-block">
+                            <h1><small style="font-size: 40; color: darkgray;">Gregory</small>
+                                <br>Farquhar</h1>
+                    </div>
+                    <div class=".name-sides-block"></div>         
+                </div>
             </center>
             <!--------------------PROFILE------------------------------------->
             <div>
@@ -162,7 +170,7 @@
         </div>
 
         <!------------------------------------Left Column of CV -->
-        <div class="divider_1">
+        <div class="page-right-block">
             <!--------------------EDUCATION------------------------------------->
             <div>
                 <h2>EDUCATION</h2>
