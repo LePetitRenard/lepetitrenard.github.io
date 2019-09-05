@@ -31,11 +31,10 @@
         .left-block{background: white}
         
         .name-container{
-            width: 80%;
+            width: 100%;
             display: grid;
-            grid-template-columns: 20% 60% 20%;
+            grid-template-columns: 30% 40% 30%;
             text-align: center;
-            justify-self: center;
         }
         .name-sides-block{background: green}
         .name-middle-block{background: gold}
@@ -75,6 +74,14 @@
             font-size: 20px;
         }
 
+        hr {
+            border: 3px solid gray;
+        }
+
+        .hr-name{
+            border: 6px solid rgb(29, 166, 230);
+        }
+
         .date { 
             color: gray;
             font-family: "Verdana"; 
@@ -98,12 +105,12 @@
             </center>
 
                 <div class="name-container">
-                    <div class="name-sides-block">1</div>
+                    <div class="name-sides-block"><hr class="hr-name"></div>
                     <div class="name-middle-block">
                             <h1><small style="font-size: 40; color: darkgray;">Gregory</small>
                                 <br>Farquhar</h1>
                     </div>
-                    <div class="name-sides-block">2</div>         
+                    <div class="name-sides-block"><hr class="hr-name"></div>         
                 </div>
             
             <!--------------------PROFILE------------------------------------->
