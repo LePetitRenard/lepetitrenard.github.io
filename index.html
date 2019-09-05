@@ -1,417 +1,456 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-            <script src="https://kit.fontawesome.com/2220926b38.js"></script>
-    </head>
-    <style>
-        .page-container {
-            width: 100%;
-            display: grid;
-            grid-template-columns: 45% 55%;
-            grid-column-gap: 20px;
-        }       
-        .page-left-block{
-            background:#ffffff;
-            margin-block-end: 20px;
-            padding-left: 3%;
-            padding-right:3%;
-            
-        }
-        .page-right-block{
-            background:white;
-            margin-block-end: 20px;
-            padding-left: 3%;
-            padding-right:3%;
-            border-left: 5px solid rgb(29, 166, 230);
-        }
 
-        .item-year-container {
-            width: 100%;
-            display: grid;
-            grid-template-columns: 70% 30%;
-        }
+<head>
+    <script src="https://kit.fontawesome.com/2220926b38.js"></script>
+</head>
+<style>
+    .page-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-column-gap: 20px;
+    }
 
-        .title-icon-container {
-            width: 100%;
-            display: grid;
-            grid-template-columns: 78% 22%;
-        }
+    .page-left-block {
+        background: #ffffff;
+        margin-block-end: 20px;
+        padding-left: 3%;
+        padding-right: 3%;
 
-        }
-        .skills-container {
-            width: 100%;
-            display: grid;
-            grid-template-columns: 35% 65%;
-        }
-        .right-block{background: white}
-        .left-block{background: white}
-        
-        .name-container{
-            width: 100%;
-            display: grid;
-            grid-template-columns: 30% 40% 30%;
-            text-align: center;
-        }
-        .name-sides-block{
-            background: white;
-            vertical-align: middle;
-        }
-        .name-middle-block{
-            background: white;
-            justify-self: center;
-        }
+    }
 
-        h1{ font-family: "Verdana"; 
-            font-size: 47px; 
-        }
+    .page-right-block {
+        background: white;
+        margin-block-end: 20px;
+        padding-left: 3%;
+        padding-right: 3%;
+        border-left: 5px solid rgb(29, 166, 230);
+    }
 
-        h2 {color: rgb(29, 166, 230);
-            font-family: "Segoe UI"; 
-            font-size: 26px; 
-            font-style: bold;
-            font-variant: normal; 
-            font-weight: 700; 
-            line-height: 28.6px;
-        }
+    .item-year-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
 
-        h3 {font-family: "Calibri";
-            font-size: 22px;
-            font-style: bold;
-        }
+    .title-icon-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 78% 22%;
+    }
 
-        h4 {font-family: "Calibri";
-            font-size: 20px;
-            font-style: normal;
-        }
+    }
 
-        h5 {font-family: "Calibri";
-            font-size: 20px;
-            font-style: normal;}
+    .skills-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 35% 65%;
+    }
 
-        p { font-family: "Calibri";
-            font-size: 20px;
-        }
+    .right-block {
+        background: white
+    }
 
-        li { font-family: "Calibri";
-            font-size: 20px;
-        }
+    .left-block {
+        background: white
+    }
 
-        hr {
-            border: 2px solid gray;
-        }
+    .name-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+        text-align: center;
+    }
 
-        .hr-name{
-            border: 4px solid rgb(29, 166, 230);
-        }
+    .name-sides-block {
+        background: white;
+        vertical-align: middle;
+    }
 
-        .date { 
-            color: gray;
-            font-family: "Verdana"; 
-            font-size: 14px; 
-        }
+    .name-middle-block {
+        background: white;
+        justify-self: center;
+    }
 
-        .image {
-            width: 200px;
-        }
+    h1 {
+        font-family: "Verdana";
+        font-size: 47px;
+    }
 
-    </style>
+    h2 {
+        color: rgb(29, 166, 230);
+        font-family: "Segoe UI";
+        font-size: 26px;
+        font-style: bold;
+        font-variant: normal;
+        font-weight: 700;
+        line-height: 28.6px;
+    }
 
-   
+    h3 {
+        font-family: "Calibri";
+        font-size: 22px;
+        font-style: bold;
+    }
 
-    <div class="page-container"> <!--To divide the site in two colums-->
-    
-        <!------------------------------------Right Column of CV-->
-        <div class="page-left-block">  
-            <center>
-                <img class="image" src="/img/GMG_clear.png" alt="Greg's photo" >
-            </center>
+    h4 {
+        font-family: "Calibri";
+        font-size: 20px;
+        font-style: normal;
+    }
 
-                <div class="name-container">
-                    <div class="name-sides-block"><hr class="hr-name"></div>
-                    <div class="name-middle-block">
-                            <h1><small style="font-size: 40; color: darkgray;">Gregory</small>
-                                <br>Farquhar</h1>
-                    </div>
-                    <div class="name-sides-block"><hr class="hr-name"></div>         
-                </div>
-            
-            <!--------------------PROFILE------------------------------------->
-            <div>
-                <h2>PROFILE</h2>
-                    <p style="font-size: 18px;">Computer Science’s graduate looking for a position as a Junior Software developer or related internship</p>
-                    <hr>
-                    <p>I am a dynamic and curious individual that enjoys both business and technical sciences. My wish is to develop a career in Computer Sciences and eventually help a business expand. </p>
-                    <p><i>I have full working rights in Australia, waiting on approval for a Partnership visa (Subclasses 820,801).</i></p>
-                    <p>I've already acquired  a  substantial  practical  knowledge  of Small Business Management.<br>
-                        Today, I am building .NET projects with OpenClassRooms, eager to become a performing asset.
-                     </p>
+    h5 {
+        font-family: "Calibri";
+        font-size: 20px;
+        font-style: normal;
+    }
+
+    p {
+        font-family: "Calibri";
+        font-size: 20px;
+    }
+
+    li {
+        font-family: "Calibri";
+        font-size: 20px;
+    }
+
+    hr {
+        border: 2px solid gray;
+    }
+
+    .hr-name {
+        border: 4px solid rgb(29, 166, 230);
+    }
+
+    .date {
+        color: gray;
+        font-family: "Verdana";
+        font-size: 14px;
+    }
+
+    .image {
+        width: 200px;
+    }
+</style>
+
+
+
+<div class="page-container">
+    <!--To divide the site in two colums-->
+
+    <!------------------------------------Right Column of CV-->
+    <div class="page-left-block">
+        <center>
+            <img class="image" src="/img/GMG_clear.png" alt="Greg's photo">
+        </center>
+
+        <div class="name-container">
+            <div class="name-sides-block">
+                <hr class="hr-name">
             </div>
-
-            <!--------------------CONTACT DETAILS------------------------------------->
-            <div>
-                    <div class="title-icon-container">
-                            <div class="left-block">
-                                <h2>CONTACT DETAILS</h2>
-                                <hr>
-                            </div>
-                            <div class="right-block">
-                                <span style="color: rgb(29, 166, 230);">
-                                    <i class="far fa-address-book fa-w-16 fa-5x"></i>
-                                </span>
-                            </div>
-                    </div>
-                    <p><span style="color: rgb(29, 166, 230);"><i class="fas fa-map-signs fa-2x"></i></span>Address: Gold Coast, Australia</p>
-                    <p>Email: gfarquhar@hotmail.fr</p>
-                    <p>Website: <a href="https://lepetitrenard.github.io"> https://lepetitrenard.github.io </a></p>
-                    <p>Github: <a href="https://github.com/LePetitRenard"> https://github.com/LePetitRenard </a></p>
+            <div class="name-middle-block">
+                <h1><small style="font-size: 40; color: darkgray;">Gregory</small>
+                    <br>Farquhar</h1>
             </div>
-
-            <!--------------------LANGUAGES------------------------------------->
-            <div>
-                <div class="title-icon-container">
-                            <div class="left-block">
-                                <h2>LANGUAGES</h2>
-                                <hr>
-                            </div>
-                            <div class="right-block">
-                                <span style="color: rgb(29, 166, 230);">
-                                    <i class="fas fa-microphone-alt fa-w-16 fa-5x"></i>
-                                </span>
-                            </div>
-                </div>
-                <center>
-                 <img src="/img/languages.png" alt="French: Mother Tongue / English: Fluent / Portuguese Intermediate" >
-               
-      
-                <p><small> (Intermediate: can have a deep conversation fluently, 
-                        <br> but not familiar with specialised language, 
-                        <br> ie. medical terms, financial terms)</small>
-                </p>
-                </center>
-            </div>
-            <!--------------------ACHIEVEMENTS------------------------------------->
-            <div id="achievement">
-                <div class="title-icon-container">
-                            <div class="left-block">
-                                <h2>ACHIEVEMENTS</h2>
-                                <hr>
-                            </div>
-                            <div class="right-block">
-                                <span style="color: rgb(29, 166, 230);">
-                                    <i class="fas fa-scroll fa-w-16 fa-5x"></i>
-                                </span>
-                            </div>
-                </div>
-                <div class="item-year-container">
-                    <div class="left-block">
-                            <!--Icon--><p>Microlight's Pilot License</p>
-                    </div>
-                    <div class="right-block">
-                            <p class="date">2011-Present</p>
-                    </div>
-
-                    <div class="left-block">
-                            <!--Icon--><p>Private Helicopter's Pilot License</p>
-                    </div>
-                    <div class="right-block">
-                            <p class="date">2008-2012</p>
-                    </div>
-
-                    <div class="left-block">
-                                <!--Icon--><p>Motor Vehicle licenses<br>A/B/C1/C/EB/EC</p>
-                    </div>
-                    <div class="right-block">
-                            <p class="date">2007-Present</p>
-                    </div>
-                        <ul>
-                            <li>Queensland State Recognised: Motorcycles, Cars</li>                        
-                        </ul>
-                </div>
+            <div class="name-sides-block">
+                <hr class="hr-name">
             </div>
         </div>
 
-        <!------------------------------------Left Column of CV -->
-        <div class="page-right-block">
-            <!--------------------EDUCATION------------------------------------->
-            <div>
-                <div class="item-year-container">
-                        <div class="left-block">
-                            <h2>EDUCATION</h2>
-                            <hr>
-                        </div>
-                        <div class="right-block">
-                            <span style="color: rgb(29, 166, 230);">
-                                <i class="fas fa-university fa-w-16 fa-5x"></i>
-                            </span>
-                        </div>
+        <!--------------------PROFILE------------------------------------->
+        <div>
+            <h2>PROFILE</h2>
+            <p style="font-size: 18px;">Computer Science’s graduate looking for a position as a Junior Software
+                developer or related internship</p>
+            <hr>
+            <p>I am a dynamic and curious individual that enjoys both business and technical sciences. My wish is to
+                develop a career in Computer Sciences and eventually help a business expand. </p>
+            <p><i>I have full working rights in Australia, waiting on approval for a Partnership visa (Subclasses
+                    820,801).</i></p>
+            <p>I've already acquired a substantial practical knowledge of Small Business Management.<br>
+                Today, I am building .NET projects with OpenClassRooms, eager to become a performing asset.
+            </p>
+        </div>
+
+        <!--------------------CONTACT DETAILS------------------------------------->
+        <div>
+            <div class="title-icon-container">
+                <div class="left-block">
+                    <h2>CONTACT DETAILS</h2>
+                    <hr>
                 </div>
-
-                    <div class="item-year-container">
-                        <div class="left-block">
-                                
-                                <h3>
-                                    <span style="color: rgb(29, 166, 230);">
-                                            <i class="far fa-square fa-2x"></i>
-                                    </span>
-                                    .Net Backend Developer Diploma
-                                </h3>
-                                <h4>Online with OpenClassRooms.com</h4>
-                        </div>
-                        <div class="right-block">
-                                <p class="date">In Progress</small></p>
-                        </div>
-                        <ul>
-                                <li>Building a .NET Project portfolio</li>
-                                <li>Practical-oriented learning</li>
-                        </ul>
-                    </div>
-
-                    <div class="item-year-container">
-                            <div class="left-block">
-                                    <!--Icon--><h3>Honors in Computer Sciences</h3>
-                                    <h4>Rhodes University, Grahamstown, South Africa</h4>
-                            </div>
-                            <div class="right-block">
-                                    <p class="date">2014-2016</p>
-                            </div>
-                            <ul>
-                                    <li>Excelled in Electronics Interfacting, coding in Assembly and C for embedded systems</li>
-                                    <li>Modules in: Real-time Multimedia and VOiP</li>
-                                    <li>Networking, AI and Android App development</li>
-                                </ul>
-                    </div>
-
-                    <div class="item-year-container">
-                            <div class="left-block">
-                                    <!--Icon--><h3>Bachelors of Commerce</h3>
-                                    <h4>Rhodes University, Grahamstown, South Africa</h4>
-                            </div>
-                            <div class="right-block">
-                                    <p class="date">2008-2013</p>
-                            </div>
-                            <ul>
-                                <li>Excelled in Strategic Management</li>
-                                <li>Specialised in Strategic Marketing, Finance and Computer Sciences</li>
-                            </ul>
-                    </div>
-
-                    <div class="item-year-container">
-                            <div class="left-block">
-                                    <!--Icon--> <h3>Engineering High School</h3>
-                                    <h4>Reunion Island, Overseas Region of France, Indian Ocean </h4>
-                            </div>
-                            <div class="right-block">
-                                    <p class="date">2004-2007</p>
-                            </div>
-                            <ul>
-                                    <li>Specialisation in Electro-mechanical Engineering</li>
-                            </ul>
-                    </div>
+                <div class="right-block">
+                    <span style="color: rgb(29, 166, 230);">
+                        <i class="far fa-address-book fa-w-16 fa-5x"></i>
+                    </span>
+                </div>
             </div>
-            <!--------------------WORK EXPERIENCE------------------------------------->
-            <div>
-                <div class="item-year-container">
-                            <div class="left-block">
-                                <h2>WORK EXPERIENCE</h2>
-                                <hr>
-                            </div>
-                            <div class="right-block">
-                                <span style="color: rgb(29, 166, 230);">
-                                    <i class="fas fa-briefcase fa-w-16 fa-5x"></i>
-                                </span>
-                            </div>
+            <p><span style="color: rgb(29, 166, 230);"><i class="fas fa-map-signs fa-2x"></i></span>Address: Gold Coast,
+                Australia</p>
+            <p>Email: gfarquhar@hotmail.fr</p>
+            <p>Website: <a href="https://lepetitrenard.github.io"> https://lepetitrenard.github.io </a></p>
+            <p>Github: <a href="https://github.com/LePetitRenard"> https://github.com/LePetitRenard </a></p>
+        </div>
+
+        <!--------------------LANGUAGES------------------------------------->
+        <div>
+            <div class="title-icon-container">
+                <div class="left-block">
+                    <h2>LANGUAGES</h2>
+                    <hr>
                 </div>
-                <div class="item-year-container">
-                        <div class="left-block">
-                                <!--Icon--> <h3>Computer Technician - Contractor</h3>
-                                <h4>GeekMobile, Gold Coast Australia</h4>
-                        </div>
-                        <div class="right-block">
-                                <p class="date">2018-Present</p>
-                        </div>
-                        <ul>
-                                <li>Fixing Software and Hardware issues at clients location</li>
-                        </ul>
+                <div class="right-block">
+                    <span style="color: rgb(29, 166, 230);">
+                        <i class="fas fa-microphone-alt fa-w-16 fa-5x"></i>
+                    </span>
                 </div>
-                   
-                <div class="item-year-container">
-                        <div class="left-block">
-                            <!--Icon--> <h3>Retail Stock Trader</h3>
-                            <h4>Independent, Australia</h4>
-                        </div>
-                        <div class="right-block">
-                                <p class="date">2018-Present</p>
-                        </div>
-                        <ul>
-                                <li>Formed Share-trading Strategies in relations to goal</li>
-                                <li>Managed Capital Risk-Management</li>
-                            </ul>        
+            </div>
+            <center>
+                <img src="/img/languages.png" alt="French: Mother Tongue / English: Fluent / Portuguese Intermediate">
+
+
+                <p><small> (Intermediate: can have a deep conversation fluently,
+                        <br> but not familiar with specialised language,
+                        <br> ie. medical terms, financial terms)</small>
+                </p>
+            </center>
+        </div>
+        <!--------------------ACHIEVEMENTS------------------------------------->
+        <div id="achievement">
+            <div class="title-icon-container">
+                <div class="left-block">
+                    <h2>ACHIEVEMENTS</h2>
+                    <hr>
+                </div>
+                <div class="right-block">
+                    <span style="color: rgb(29, 166, 230);">
+                        <i class="fas fa-scroll fa-w-16 fa-5x"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="item-year-container">
+                <div class="left-block">
+                    <!--Icon-->
+                    <p>Microlight's Pilot License</p>
+                </div>
+                <div class="right-block">
+                    <p class="date">2011-Present</p>
                 </div>
 
-                <div class="item-year-container">
-                        <div class="left-block">
-                            <!--Icon--> <h3>Started and Ran Babbe Guesthouse CC.</h3>
-                            <h4>28 Stones Hill B&B, Grahamstown, South Africa</h4>
-                        </div>
-                        <div class="right-block">
-                                <p class="date">2010-2015</p>
-                        </div>
-                        <p>Achievement: Repaid the guesthouse mortgage in less than 7 years <br>
-                        Responsibilities included every aspect of the business:<p>
+                <div class="left-block">
+                    <!--Icon-->
+                    <p>Private Helicopter's Pilot License</p>
+                </div>
+                <div class="right-block">
+                    <p class="date">2008-2012</p>
+                </div>
+
+                <div class="left-block">
+                    <!--Icon-->
+                    <p>Motor Vehicle licenses<br>A/B/C1/C/EB/EC</p>
+                </div>
+                <div class="right-block">
+                    <p class="date">2007-Present</p>
+                </div>
+                <ul>
+                    <li>Queensland State Recognised: Motorcycles, Cars</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------Left Column of CV -->
+    <div class="page-right-block">
+        <!--------------------EDUCATION------------------------------------->
+        <div>
+            <div class="item-year-container">
+                <div class="left-block">
+                    <h2>EDUCATION</h2>
+                    <hr>
+                </div>
+                <div class="right-block">
+                    <span style="color: rgb(29, 166, 230);">
+                        <i class="fas fa-university fa-w-16 fa-5x"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="item-year-container">
+                <div class="left-block">
+
+                    <h3>
+                        <span style="color: rgb(29, 166, 230);">
+                            <i class="far fa-square fa-2x"></i>
+                        </span>
+                        .Net Backend Developer Diploma
+                    </h3>
+                    <h4>Online with OpenClassRooms.com</h4>
+                </div>
+                <div class="right-block">
+                    <p class="date">In Progress</small></p>
+                </div>
+                <ul>
+                    <li>Building a .NET Project portfolio</li>
+                    <li>Practical-oriented learning</li>
+                </ul>
+            </div>
+
+            <div class="item-year-container">
+                <div class="left-block">
+                    <!--Icon-->
+                    <h3>Honors in Computer Sciences</h3>
+                    <h4>Rhodes University, Grahamstown, South Africa</h4>
+                </div>
+                <div class="right-block">
+                    <p class="date">2014-2016</p>
+                </div>
+                <ul>
+                    <li>Excelled in Electronics Interfacting, coding in Assembly and C for embedded systems</li>
+                    <li>Modules in: Real-time Multimedia and VOiP</li>
+                    <li>Networking, AI and Android App development</li>
+                </ul>
+            </div>
+
+            <div class="item-year-container">
+                <div class="left-block">
+                    <!--Icon-->
+                    <h3>Bachelors of Commerce</h3>
+                    <h4>Rhodes University, Grahamstown, South Africa</h4>
+                </div>
+                <div class="right-block">
+                    <p class="date">2008-2013</p>
+                </div>
+                <ul>
+                    <li>Excelled in Strategic Management</li>
+                    <li>Specialised in Strategic Marketing, Finance and Computer Sciences</li>
+                </ul>
+            </div>
+
+            <div class="item-year-container">
+                <div class="left-block">
+                    <!--Icon-->
+                    <h3>Engineering High School</h3>
+                    <h4>Reunion Island, Overseas Region of France, Indian Ocean </h4>
+                </div>
+                <div class="right-block">
+                    <p class="date">2004-2007</p>
+                </div>
+                <ul>
+                    <li>Specialisation in Electro-mechanical Engineering</li>
+                </ul>
+            </div>
+        </div>
+        <!--------------------WORK EXPERIENCE------------------------------------->
+        <div>
+            <div class="item-year-container">
+                <div class="left-block">
+                    <h2>WORK EXPERIENCE</h2>
+                    <hr>
+                </div>
+                <div class="right-block">
+                    <span style="color: rgb(29, 166, 230);">
+                        <i class="fas fa-briefcase fa-w-16 fa-5x"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="item-year-container">
+                <div class="left-block">
+                    <!--Icon-->
+                    <h3>Computer Technician - Contractor</h3>
+                    <h4>GeekMobile, Gold Coast Australia</h4>
+                </div>
+                <div class="right-block">
+                    <p class="date">2018-Present</p>
+                </div>
+                <ul>
+                    <li>Fixing Software and Hardware issues at clients location</li>
+                </ul>
+            </div>
+
+            <div class="item-year-container">
+                <div class="left-block">
+                    <!--Icon-->
+                    <h3>Retail Stock Trader</h3>
+                    <h4>Independent, Australia</h4>
+                </div>
+                <div class="right-block">
+                    <p class="date">2018-Present</p>
+                </div>
+                <ul>
+                    <li>Formed Share-trading Strategies in relations to goal</li>
+                    <li>Managed Capital Risk-Management</li>
+                </ul>
+            </div>
+
+            <div class="item-year-container">
+                <div class="left-block">
+                    <!--Icon-->
+                    <h3>Started and Ran Babbe Guesthouse CC.</h3>
+                    <h4>28 Stones Hill B&B, Grahamstown, South Africa</h4>
+                </div>
+                <div class="right-block">
+                    <p class="date">2010-2015</p>
+                </div>
+                <p>Achievement: Repaid the guesthouse mortgage in less than 7 years <br>
+                    Responsibilities included every aspect of the business:<p>
                         <ul>
                             <li>Strategic Positioning and Marketing</li>
                             <li>Bookkeeping and Managing</li>
                             <li>Maintenance of the premises (Electricity,plumbing...)</li>
                             <li>Complying with all state paperwork</li>
-                        </ul>      
+                        </ul>
+            </div>
+        </div>
+        <!--------------------PROFESSIONAL SKILLS------------------------------------->
+        <div>
+            <div class="item-year-container">
+                <div class="left-block">
+                    <h2>PROFESSIONAL SKILLS</h2>
+                    <hr>
+                </div>
+                <div class="right-block">
+                    <span style="color: rgb(29, 166, 230);">
+                        <i class="far fa-chart-bar fa-w-16 fa-5x"></i>
+                    </span>
                 </div>
             </div>
-            <!--------------------PROFESSIONAL SKILLS------------------------------------->
-            <div>
-                <div class="item-year-container">
-                            <div class="left-block">
-                                <h2>PROFESSIONAL SKILLS</h2>
-                                <hr>
-                            </div>
-                            <div class="right-block">
-                                <span style="color: rgb(29, 166, 230);">
-                                    <i class="far fa-chart-bar fa-w-16 fa-5x"></i>
-                                </span>
-                            </div>
+            <div class="skills-container">
+                <div class="left-block">
+                    <!--Icon-->
+                    <h5>Commercial Skills:</h5>
                 </div>
-                <div class="skills-container">
-                        <div class="left-block">
-                                <!--Icon--> <h5>Commercial Skills:</h5>
-                        </div>
-                        <div class="right-block">
-                                <p><small>Analytical and Logical while Solving Problems <br>
-                                     Client-Oriented with a Strategic and Marketing Outlook.</small></p>
-                        </div>
+                <div class="right-block">
+                    <p><small>Analytical and Logical while Solving Problems <br>
+                            Client-Oriented with a Strategic and Marketing Outlook.</small></p>
                 </div>
+            </div>
 
-                <div class="skills-container">
-                        <div class="left-block">
-                                <!--Icon--> <h5>Teamwork:</h5>
-                        </div>
-                        <div class="right-block">
-                                <p><small> Team-Player, Strong Work Ethics, Responsible,
-                                    <br> Easy-to-Approach, Adapt myself to the Team,      
-                                    <br> Enthusiastic with a Positive attitude </small></p>
-                        </div>
+            <div class="skills-container">
+                <div class="left-block">
+                    <!--Icon-->
+                    <h5>Teamwork:</h5>
                 </div>
-                <div class="skills-container">
-                        <div class="left-block">
-                                <!--Icon--> <h5>Computer Skills:</h5>
-                        </div>
-                        <div class="right-block">
-                                <p><small>Low Level Languages: Assembly and C for embedded systems
-                                    <br> Other Languages: Python, Java or Bash
-                                    <br> Linux and Windows (Can adapt to Mac OS)
-                                </p></small></p>
-                        </div>
+                <div class="right-block">
+                    <p><small> Team-Player, Strong Work Ethics, Responsible,
+                            <br> Easy-to-Approach, Adapt myself to the Team,
+                            <br> Enthusiastic with a Positive attitude </small></p>
                 </div>
-            </div>    
+            </div>
+            <div class="skills-container">
+                <div class="left-block">
+                    <!--Icon-->
+                    <h5>Computer Skills:</h5>
+                </div>
+                <div class="right-block">
+                    <p><small>Low Level Languages: Assembly and C for embedded systems
+                            <br> Other Languages: Python, Java or Bash
+                            <br> Linux and Windows (Can adapt to Mac OS)
+                    </p></small></p>
+                </div>
+            </div>
         </div>
+    </div>
 
 </html>
